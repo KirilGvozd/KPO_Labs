@@ -1,0 +1,19 @@
+﻿Build started 21/03/2022 15:21:20.
+Logging verbosity is set to: Normal.     1>Project "D:\2 семестр\КПО\Лаба 1\Laba1\Laba1.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\Laba1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         Laba1.vcxproj -> D:\2 семестр\КПО\Лаба 1\Laba1\x64\Debug\Laba1.exe
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\Laba1.tlog\unsuccessfulbuild".
+         Touching "x64\Debug\Laba1.tlog\Laba1.lastbuildstate".
+     1>Done Building Project "D:\2 семестр\КПО\Лаба 1\Laba1\Laba1.vcxproj" (Build target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.61

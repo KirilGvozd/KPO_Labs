@@ -1,0 +1,32 @@
+﻿Build started 14/02/2022 17:12:10.
+Logging verbosity is set to: Normal.     1>Project "D:\2 семестр\КПО\Лаба 1\Laba1\Laba1.vcxproj" on node 2 (Build target(s)).
+     1>PrepareForBuild:
+         Creating directory "x64\Release\Laba1.tlog\".
+       InitializeBuildStatus:
+         Creating "x64\Release\Laba1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\HostX64\x64\CL.exe /c /Zi /nologo /W3 /WX- /diagnostics:column /sdl /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Release\\" /Fd"x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt Laba1.cpp
+         Laba1.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\2 семестр\КПО\Лаба 1\Laba1\x64\Release\Laba1.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\2 семестр\КПО\Лаба 1\Laba1\x64\Release\Laba1.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /LTCGOUT:"x64\Release\Laba1.iobj" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\2 семестр\КПО\Лаба 1\Laba1\x64\Release\Laba1.lib" /MACHINE:X64 x64\Release\Laba1.obj
+         Generating code
+         Previous IPDB not found, fall back to full compilation.
+     1>D:\2 семестр\КПО\Лаба 1\Laba1\Laba1.cpp(183): warning C4715: 'number_of_day': not all control paths return a value
+         All 13 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         Finished generating code
+         Laba1.vcxproj -> D:\2 семестр\КПО\Лаба 1\Laba1\x64\Release\Laba1.exe
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\Laba1.tlog\unsuccessfulbuild".
+         Touching "x64\Release\Laba1.tlog\Laba1.lastbuildstate".
+     1>Done Building Project "D:\2 семестр\КПО\Лаба 1\Laba1\Laba1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+       "D:\2 семестр\КПО\Лаба 1\Laba1\Laba1.vcxproj" (Build target) (1) ->
+       (Link target) -> 
+         D:\2 семестр\КПО\Лаба 1\Laba1\Laba1.cpp(183): warning C4715: 'number_of_day': not all control paths return a value
+
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.95
