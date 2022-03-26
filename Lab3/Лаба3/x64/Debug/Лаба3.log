@@ -1,0 +1,28 @@
+﻿Build started 14/03/2022 17:30:47.
+Logging verbosity is set to: Normal.     1>Project "D:\2 семестр\КПО\Лаба 3\Лаба3\Лаба3.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\Лаба3.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt "Лаба3.cpp"
+         Лаба3.cpp
+     1>D:\2 семестр\КПО\Лаба 3\Лаба3\Лаба3.cpp(33,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>D:\2 семестр\КПО\Лаба 3\Лаба3\Лаба3.cpp(34,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\2 семестр\КПО\Лаба 3\Лаба3\x64\Debug\Лаба3.exe" /INCREMENTAL /ILK:"x64\Debug\Лаба3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\2 семестр\КПО\Лаба 3\Лаба3\x64\Debug\Лаба3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\2 семестр\КПО\Лаба 3\Лаба3\x64\Debug\Лаба3.lib" /MACHINE:X64 "x64\Debug\Лаба3.obj"
+         Лаба3.vcxproj -> D:\2 семестр\КПО\Лаба 3\Лаба3\x64\Debug\Лаба3.exe
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\Лаба3.tlog\unsuccessfulbuild".
+         Touching "x64\Debug\Лаба3.tlog\Лаба3.lastbuildstate".
+     1>Done Building Project "D:\2 семестр\КПО\Лаба 3\Лаба3\Лаба3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+       "D:\2 семестр\КПО\Лаба 3\Лаба3\Лаба3.vcxproj" (Build target) (1) ->
+       (ClCompile target) -> 
+         D:\2 семестр\КПО\Лаба 3\Лаба3\Лаба3.cpp(33,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+         D:\2 семестр\КПО\Лаба 3\Лаба3\Лаба3.cpp(34,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.26
