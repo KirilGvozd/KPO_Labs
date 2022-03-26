@@ -1,0 +1,24 @@
+﻿Build started 25/03/2022 23:25:39.
+Logging verbosity is set to: Normal.     1>Project "D:\2 семестр\КПО\Lab5\Lab5_Project\Lab5_Project.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Touching "x64\Debug\Task1.tlog\unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\2 семестр\КПО\Lab5\Lab5_Project\x64\Debug\Task1.exe" /INCREMENTAL /ILK:"x64\Debug\Task1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\2 семестр\КПО\Lab5\Lab5_Project\x64\Debug\Task1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\2 семестр\КПО\Lab5\Lab5_Project\x64\Debug\Task1.lib" /MACHINE:X64 x64\Debug\Task1.obj
+         x64\Debug\Task2.obj
+     1>Task2.obj : error LNK2005: main already defined in Task1.obj
+     1>D:\2 семестр\КПО\Lab5\Lab5_Project\x64\Debug\Task1.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>Done Building Project "D:\2 семестр\КПО\Lab5\Lab5_Project\Lab5_Project.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+       "D:\2 семестр\КПО\Lab5\Lab5_Project\Lab5_Project.vcxproj" (Build target) (1) ->
+       (Link target) -> 
+         Task2.obj : error LNK2005: main already defined in Task1.obj
+         D:\2 семестр\КПО\Lab5\Lab5_Project\x64\Debug\Task1.exe : fatal error LNK1169: one or more multiply defined symbols found
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.80
