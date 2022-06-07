@@ -1,0 +1,2 @@
+A:\KPO\Lab10_Test\Lab10\x64\Debug\Lab10.exe
+A:\KPO\Lab10\Lab10\x64\Debug\Lab10.exe
