@@ -1,0 +1,10 @@
+#pragma once
+#include <iostream>
+#include <tchar.h>
+#include <cwchar>
+#include <string.h>
+#include <cstring>
+#include <locale>
+#include <cwchar>
+#include <fstream>
+#include <ctime>
