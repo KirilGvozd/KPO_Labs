@@ -1,0 +1,77 @@
+Microsoft (R) Macro Assembler (x64) Version 14.33.31629.0   09/08/22 21:33:45
+org.asm							     Page 1 - 1
+
+
+				.586P
+org.asm(1) : error A2008:syntax error : .
+				.MODEL FLAT, STDCALL
+org.asm(2) : error A2008:syntax error : .
+				includelib kernel32.lib
+
+				ExitProcess PROTO : DWORD
+				MessageBoxA PROTO : DWORD, : DWORD, : DWORD, : DWORD
+
+				.STACK 4096
+org.asm(8) : error A2008:syntax error : .
+
+ 00000000			.CONST
+
+ 00000000			.DATA
+ = 00000000			MB_OK  EQU 0
+ 00000000 CC EE FF 20 EF	STR1  DB "Моя первая программа", 0
+	   E5 F0 E2 E0 FF
+	   20 EF F0 EE E3
+	   F0 E0 EC EC E0
+	   00
+ 00000015 CF F0 E8 E2 E5	STR2  DB "Привет всем!", 0
+	   F2 20 E2 F1 E5
+	   EC 21 00
+ 00000022 00000000		HW    DD ?
+
+ 00000000			.CODE
+
+ 00000000			main PROC
+ 00000000			START : 
+				    
+				  INVOKE MessageBoxA, HW, OFFSET STR2, OFFSET STR1, MB_OK
+org.asm(23) : error A2008:syntax error : MessageBoxA
+
+ 00000000  6A FF		  push - 1
+ 00000002  E8 00000000 E	  call ExitProcess
+ 00000007			main ENDP
+
+				end main
+Microsoft (R) Macro Assembler (x64) Version 14.33.31629.0   09/08/22 21:33:45
+org.asm							     Symbols 2 - 1
+
+
+
+
+Segments:
+
+                N a m e                  Length   Align   Class
+
+CONST  . . . . . . . . . . . . .	 00000000 16	  'CONST'	 ReadOnly
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+MessageBoxA  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+main . . . . . . . . . . . . . .	P 	 00000000 _TEXT	Length= 00000007 Public
+  START  . . . . . . . . . . . .	L 	 00000000 _TEXT	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+HW . . . . . . . . . . . . . . .	DWord	 00000022 _DATA	
+MB_OK  . . . . . . . . . . . . .	Number	 00000000h   
+STR1 . . . . . . . . . . . . . .	Byte	 00000000 _DATA	
+STR2 . . . . . . . . . . . . . .	Byte	 00000015 _DATA	
+
+	   0 Warnings
+	   6 Errors

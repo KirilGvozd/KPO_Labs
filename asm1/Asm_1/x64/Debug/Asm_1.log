@@ -1,0 +1,8 @@
+﻿  Assembling org.asm...
+org.asm(1): error A2008: syntax error : .
+org.asm(2): error A2008: syntax error : .
+org.asm(8): error A2008: syntax error : .
+org.asm(23): error A2008: syntax error : MessageBoxA
+org.asm(29): error A2008: syntax error : main
+org.asm(29): error A2088: END directive required at end of file
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: The command "ml64.exe /c /nologo /Zi /Fo"x64\Debug\org.obj" /Fl"x64\Debug\\" /W3 /errorReport:prompt  /Taorg.asm" exited with code 1.
