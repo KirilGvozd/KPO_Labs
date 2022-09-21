@@ -1,0 +1,31 @@
+Microsoft (R) Macro Assembler (x64) Version 14.33.31630.0   09/21/22 11:25:36
+Asm2.asm						     Page 1 - 1
+
+
+				.AM2900
+Asm2.asm(1) : error A2008:syntax error : .
+				.model flat, stdcall
+Asm2.asm(2) : error A2008:syntax error : .
+
+ 00000000			.data
+
+ 00000000			.code
+ 00000000			start:
+ 00000000  B8 00000003		mov eax,3
+ 00000005  83 C0 02		add eax,2
+ 00000008  C3			ret
+				end start
+Microsoft (R) Macro Assembler (x64) Version 14.33.31630.0   09/21/22 11:25:36
+Asm2.asm						     Symbols 2 - 1
+
+
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+start  . . . . . . . . . . . . .	L 	 00000000 _TEXT	
+
+	   0 Warnings
+	   4 Errors
