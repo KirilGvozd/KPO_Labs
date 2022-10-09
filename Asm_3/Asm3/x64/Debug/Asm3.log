@@ -1,0 +1,9 @@
+﻿  Assembling Asm3.asm...
+Asm3.asm(1): error A2008: syntax error : .
+Asm3.asm(2): error A2008: syntax error : .
+Asm3.asm(8): error A2008: syntax error : .
+Asm3.asm(56): error A2008: syntax error : MessageBoxA
+Asm3.asm(70): error A2008: syntax error : MessageBoxA
+Asm3.asm(79): error A2008: syntax error : main
+Asm3.asm(79): error A2088: END directive required at end of file
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: The command "ml64.exe /c /nologo /Zi /Fo"x64\Debug\Asm3.obj" /Fl"x64\Debug\\" /W3 /errorReport:prompt  /TaAsm3.asm" exited with code 1.

@@ -1,0 +1,136 @@
+Microsoft (R) Macro Assembler (x64) Version 14.33.31630.0   10/05/22 09:59:47
+Asm3.asm						     Page 1 - 1
+
+
+				.586P
+Asm3.asm(1) : error A2008:syntax error : .
+				.model flat, stdcall
+Asm3.asm(2) : error A2008:syntax error : .
+				includelib kernel32.lib
+
+				ExitProcess PROTO :DWORD
+				MessageBoxA PROTO : DWORD, : DWORD, : DWORD, : DWORD
+
+				.STACK 4096
+Asm3.asm(8) : error A2008:syntax error : .
+
+ 00000000			.CONST
+
+ 00000000			.DATA
+
+ 00000000 01 02 03 04 05	Arr BYTE 1, 2, 3, 4, 5, 6, 7
+	   06 07
+ 00000007 10 20 30 40		myBytes BYTE 10h, 20h, 30h, 40h
+ = 00000000			MB_OK	EQU 0
+ 0000000B 50 72 6F 67 72	STR1 DB "Program", 0
+	   61 6D 00
+ 00000013 50 72 6F 67 72	STR2 DB "Program 1", 0
+	   61 6D 20 31 00
+ 0000001D 50 72 6F 67 72	STR3 DB "Program 2", 0
+	   61 6D 20 32 00
+ 00000027 00000000		HW		DD ?
+
+
+ 00000000			.CODE
+
+ 00000000			main PROC
+
+ 00000000			START:
+					
+ 00000000  BE 00000007 R		mov ESI, OFFSET myBytes
+ 00000005  67& 8A 26			mov AH, [ESI]
+ 00000008  67& 8A 46 02			mov AL, [ESI + 2]
+
+ 0000000C  33 C0			xor EAX, EAX
+ 0000000E  33 DB			xor EBX, EBX
+
+
+ 00000010  02 05 00000000 R		add AL, [Arr]
+ 00000016  02 05 00000001 R		add AL, [Arr + 1]
+ 0000001C  02 05 00000002 R		add AL, [Arr + 2]
+ 00000022  02 05 00000003 R		add AL, [Arr + 3]
+ 00000028  02 05 00000004 R		add AL, [Arr + 4]
+ 0000002E  02 05 00000005 R		add AL, [Arr + 5]
+ 00000034  02 05 00000006 R		add AL, [Arr + 6]
+
+ 0000003A  33 C0			xor EAX, EAX
+ 0000003C  B9 00000007			mov ECX, LENGTHOF Arr
+ 00000041  BB 00000001			mov EBX, 1
+
+ 00000046			CYCLE:
+ 00000046  80 B8 00000000 R		cmp [Arr + EAX], 0
+	   00
+ 0000004D  74 02			je TRUE
+ 0000004F  75 07			jne FALSE
+
+ 00000051			TRUE:
+ 00000051  BB 00000000			mov EBX, 0
+					invoke MessageBoxA, HW, OFFSET STR2, OFFSET STR1, MB_OK
+Asm3.asm(56) : error A2008:syntax error : MessageBoxA
+ 00000056  EB 05			jmp ENDOFCYCLE
+
+ 00000058			FALSE:
+ 00000058  83 C0 01			add EAX, 1
+ 0000005B  E2 E9			loop CYCLE
+
+ 0000005D			ENDOFCYCLE:
+
+ 0000005D  83 FB 01			cmp EBX, 1
+ 00000060  74 02			je CHECKF
+ 00000062  75 00			jne CHECKT
+
+ 00000064			CHECKF:
+					invoke MessageBoxA, HW, OFFSET STR3, OFFSET STR1, MB_OK
+Asm3.asm(70) : error A2008:syntax error : MessageBoxA
+
+ 00000064			CHECKT:
+
+
+ 00000064  6A 00			push 0
+ 00000066  E8 00000000 E		CALL ExitProcess
+
+ 0000006B			main ENDP
+				end main
+Microsoft (R) Macro Assembler (x64) Version 14.33.31630.0   10/05/22 09:59:47
+Asm3.asm						     Symbols 2 - 1
+
+
+
+
+Segments:
+
+                N a m e                  Length   Align   Class
+
+CONST  . . . . . . . . . . . . .	 00000000 16	  'CONST'	 ReadOnly
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+MessageBoxA  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+main . . . . . . . . . . . . . .	P 	 00000000 _TEXT	Length= 0000006B Public
+  START  . . . . . . . . . . . .	L 	 00000000 _TEXT	
+  CYCLE  . . . . . . . . . . . .	L 	 00000046 _TEXT	
+  TRUE . . . . . . . . . . . . .	L 	 00000051 _TEXT	
+  FALSE  . . . . . . . . . . . .	L 	 00000058 _TEXT	
+  ENDOFCYCLE . . . . . . . . . .	L 	 0000005D _TEXT	
+  CHECKF . . . . . . . . . . . .	L 	 00000064 _TEXT	
+  CHECKT . . . . . . . . . . . .	L 	 00000064 _TEXT	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+Arr  . . . . . . . . . . . . . .	Byte	 00000000 _DATA	
+HW . . . . . . . . . . . . . . .	DWord	 00000027 _DATA	
+MB_OK  . . . . . . . . . . . . .	Number	 00000000h   
+STR1 . . . . . . . . . . . . . .	Byte	 0000000B _DATA	
+STR2 . . . . . . . . . . . . . .	Byte	 00000013 _DATA	
+STR3 . . . . . . . . . . . . . .	Byte	 0000001D _DATA	
+myBytes  . . . . . . . . . . . .	Byte	 00000007 _DATA	
+
+	   0 Warnings
+	   7 Errors
