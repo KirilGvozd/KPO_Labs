@@ -1,0 +1,29 @@
+﻿  Error.cpp
+  FST.cpp
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\FST.cpp(62,37): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  GRB.cpp
+  In.cpp
+  IT.cpp
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\IT.cpp(79,36): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\IT.cpp(99,36): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+  Lab22.cpp
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\Lab22.cpp(35,28): warning C4101: 'lt_position': unreferenced local variable
+  LexAnalysis.cpp
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\LexAnalysis.cpp(80,21): warning C4305: '=': truncation from 'int' to 'char'
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\LexAnalysis.cpp(80,17): warning C4309: '=': truncation of constant value
+  Log.cpp
+  LT.cpp
+  MFST.cpp
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\MFST.cpp(236,68): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  Out.cpp
+  Parm.cpp
+  PolishNotation.cpp
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\PolishNotation.cpp(74,21): warning C4129: '@': unrecognized character escape sequence
+  Generating Code...
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\PolishNotation.cpp(16): warning C4715: 'PolishNotation::Stack::push': not all control paths return a value
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\PolishNotation.cpp(28): warning C4715: 'PolishNotation::Stack::push': not all control paths return a value
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\PolishNotation.cpp(40): warning C4172: returning address of local variable or temporary: temp
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\LT.cpp(23): warning C4715: 'LT::LexTable::GetEntry': not all control paths return a value
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\IT.cpp(160): warning C4715: 'IT::IdTable::GetEntry': not all control paths return a value
+D:\Semestr_3\KPO_Labs\Lab22\Lab22\IT.cpp(192): warning C4172: returning address of local variable or temporary: buffer
+  Lab22.vcxproj -> D:\Semestr_3\KPO_Labs\Lab22\Debug\Lab22.exe
