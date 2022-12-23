@@ -1,0 +1,21 @@
+﻿  Error.cpp
+  FST.cpp
+D:\Semestr_3\KPO_Labs\Lab20\Lab20\FST.cpp(62,37): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  IT.cpp
+D:\Semestr_3\KPO_Labs\Lab20\Lab20\IT.cpp(79,36): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+D:\Semestr_3\KPO_Labs\Lab20\Lab20\IT.cpp(99,36): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+  In.cpp
+  LT.cpp
+  Lab20.cpp
+D:\Semestr_3\KPO_Labs\Lab20\Lab20\Lab20.cpp(19,8): warning C4102: 'Log': unreferenced label
+  LexAnalysis.cpp
+D:\Semestr_3\KPO_Labs\Lab20\Lab20\LexAnalysis.cpp(80,21): warning C4305: '=': truncation from 'int' to 'char'
+D:\Semestr_3\KPO_Labs\Lab20\Lab20\LexAnalysis.cpp(80,17): warning C4309: '=': truncation of constant value
+  Log.cpp
+  Out.cpp
+  Parm.cpp
+  Generating Code...
+D:\Semestr_3\KPO_Labs\Lab20\Lab20\LT.cpp(23): warning C4715: 'LT::LexTable::GetEntry': not all control paths return a value
+D:\Semestr_3\KPO_Labs\Lab20\Lab20\IT.cpp(160): warning C4715: 'IT::IdTable::GetEntry': not all control paths return a value
+D:\Semestr_3\KPO_Labs\Lab20\Lab20\IT.cpp(192): warning C4172: returning address of local variable or temporary: buffer
+  Lab20.vcxproj -> D:\Semestr_3\KPO_Labs\Lab20\Lab20\x64\Debug\Lab20.exe
